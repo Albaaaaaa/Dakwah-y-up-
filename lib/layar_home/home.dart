@@ -1,4 +1,8 @@
 import 'package:dakwah_y_up/bahan.dart';
+import 'package:dakwah_y_up/bilah/hijb_tab.dart';
+import 'package:dakwah_y_up/bilah/juz_tab.dart';
+import 'package:dakwah_y_up/bilah/surah_tab.dart';
+import 'package:dakwah_y_up/bilah/verses_tab.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -28,14 +32,16 @@ class HomeScreen extends StatelessWidget {
                 elevation: 0,
                 backgroundColor: latarbelakang,
                 automaticallyImplyLeading: false,
-                shape: Border(bottom: BorderSide(
-                  width: 3,
-                  color: latarbelakang)),
+                shape: Border(bottom: BorderSide(color: latarbelakang )),
                 bottom: PreferredSize(preferredSize: const Size.fromHeight(0),
                 child: _tab(),),
               )
             ],
-            body: Container()),
+            body: const TabBarView(
+              children: [SurahTab(), VersesTab(), JuzTab(),HijbTab()
+              ]
+              ),
+              ),
         ),
       ),
     );
@@ -46,9 +52,9 @@ class HomeScreen extends StatelessWidget {
       unselectedLabelColor: text, labelColor: Colors.white, indicatorColor: stroke, indicatorWeight: 3,
       tabs: [
                 _tabItem(label: "Surah"),
-                _tabItem(label: "Konten1"),
-                _tabItem(label: "Konten2"),
-                _tabItem(label: "Konten3"),
+                _tabItem(label: "Verses"),
+                _tabItem(label: "Juz"),
+                _tabItem(label: "Hijb"),
               ],);
   }
 
