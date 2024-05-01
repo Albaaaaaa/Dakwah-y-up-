@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class CardView extends StatelessWidget {
   final int index;
-  final List<EntityModel> data; // Perubahan tipe data disini
+  final List<EntityModel> data; 
   
   const CardView({Key? key, required this.index, required this.data});
 
@@ -38,7 +38,7 @@ class CardView extends StatelessWidget {
               style: GoogleFonts.poppins(
                 fontSize: 14,
                 fontWeight: FontWeight.w700,
-                color: Colors.white, // Ubah warna teks menjadi putih
+                color: Colors.white, 
               ),
             ),
           ),
@@ -47,7 +47,7 @@ class CardView extends StatelessWidget {
             style: GoogleFonts.poppins(
               fontSize: 23,
               fontWeight: FontWeight.bold,
-              color: Colors.white, // Ubah warna teks menjadi putih
+              color: Colors.white,
             ),
             textAlign: TextAlign.center,
           ),
@@ -56,7 +56,7 @@ class CardView extends StatelessWidget {
             style: GoogleFonts.poppins(
               fontSize: 14,
               fontWeight: FontWeight.bold,
-              color: Colors.white, // Ubah warna teks menjadi putih
+              color: Colors.white,
             ),
             textAlign: TextAlign.center,
           ),
@@ -70,7 +70,7 @@ class CardView extends StatelessWidget {
               style: GoogleFonts.poppins(
                 fontSize: 10,
                 fontWeight: FontWeight.w600,
-                color: Colors.white, // Ubah warna teks menjadi putih
+                color: Colors.white,
               ),
               textAlign: TextAlign.center,
             ),
