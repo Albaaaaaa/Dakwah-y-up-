@@ -1,3 +1,6 @@
+import 'dart:indexed_db';
+import 'dart:js';
+
 import 'package:dakwah_y_up/bahan.dart';
 import 'package:dakwah_y_up/bilah/hijb_tab.dart';
 import 'package:dakwah_y_up/bilah/juz_tab.dart';
@@ -17,7 +20,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: latarbelakang,
       appBar: _buildAppBar(),
-      bottomNavigationBar: _buildBottomNavigationBar(),
+      bottomNavigationBar: _buildBottomNavigationBar(context),
       body: DefaultTabController(
         length: 4,
         child: Padding(
@@ -171,22 +174,33 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  BottomNavigationBar _buildBottomNavigationBar() {
-return BottomNavigationBar(
-    type: BottomNavigationBarType.fixed,
-    backgroundColor: footer,
-    showSelectedLabels: false,
-    showUnselectedLabels: false,
-    items: [
-      _footerBarItem(icon: "assets/svgs/footer_quran.svg", label: "quran"),
-      _footerBarItem(icon: "assets/svgs/footer_lampu.svg", label: "Lampu"),
-      _footerBarItem(icon: "assets/svgs/footer_orang_duduk.svg", label: "Icon Orang Duduk"),
-      _footerBarItem(icon: "assets/svgs/footer_tangan_berdoa.svg", label: "Icon Tangan Berdoa"),
-      _footerBarItem(icon: "assets/svgs/footer_simpan.svg", label: "Icon Simpan"),
+  BottomNavigationBar _buildBottomNavigationBar(BuildContext context) {
+    return BottomNavigationBar(
+      type: BottomNavigationBarType.fixed,
+      backgroundColor: footer,
+      showSelectedLabels: false,
+      showUnselectedLabels: false,
+      items: [
+        _footerBarItem(icon: "assets/svgs/footer_quran.svg", label: "quran"),
+        _footerBarItem(icon: "assets/svgs/footer_lampu.svg", label: "Lampu"),
+        _footerBarItem(icon: "assets/svgs/footer_orang_duduk.svg", label: "Icon Orang Duduk"),
+        _footerBarItem(icon: "assets/svgs/footer_tangan_berdoa.svg", label: "Icon Tangan Berdoa"),
+        _footerBarItem(icon: "assets/svgs/footer_simpan.svg", label: "Icon Simpan"),
     ],
-  );
-}
-
+    onTap: (index) {
+      if (index == 1) {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => ChatAi()));
+      } else if (index == 2) {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => BacaanSholat()));
+      } else if (index == 3) {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => DoaSehari()));
+      } else if (index == 4) {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => Simpan()));
+      }
+      },
+    );
+  }
+    
 BottomNavigationBarItem _footerBarItem({required String icon, required String label}) {
   return BottomNavigationBarItem(
     icon: SvgPicture.asset(icon),
