@@ -4,7 +4,7 @@ class EntityModel {
   String? arab;
   String? arti;
 
-  EntityModel({this.urutan, this.latin, this.arab, this.arti});
+  EntityModel({this.urutan, this.latin, this.arab, this.arti}); //variabel untuk memanggil
 
   factory EntityModel.fromJson(dynamic json) {
     return EntityModel(
