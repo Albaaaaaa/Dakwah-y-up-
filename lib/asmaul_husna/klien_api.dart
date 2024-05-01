@@ -4,7 +4,7 @@ import 'dart:convert';
 
 class ApiClient {
   static Future<List<EntityModel>> getAllAsmaulHusna() async {
-    Uri url = Uri.parse("https://asmaul-husna-api.vercel.app/api/all");
+    Uri url = Uri.parse("https://asmaul-husna-api.vercel.app/api/all"); // Api Terbaru
     var response = await http.get(url);
 
     if (response.statusCode == 200) {
