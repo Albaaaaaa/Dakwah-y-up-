@@ -3,21 +3,23 @@ import 'package:dakwah_y_up/bilah/hijb_tab.dart';
 import 'package:dakwah_y_up/bilah/juz_tab.dart';
 import 'package:dakwah_y_up/bilah/surah_tab.dart';
 import 'package:dakwah_y_up/bilah/verses_tab.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:dakwah_y_up/layar_bacaan_sholat/bacaan_sholat.dart';
+import 'package:dakwah_y_up/layar_chat_ai/chat_ai.dart';
+import 'package:dakwah_y_up/layar_doa_sehari/doa.dart';
+import 'package:dakwah_y_up/layar_simpan/simpan.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: latarbelakang,
       appBar: _buildAppBar(),
-      bottomNavigationBar: _buildBottomNavigationBar(),
+      bottomNavigationBar: _buildBottomNavigationBar(context),
       body: DefaultTabController(
         length: 4,
         child: Padding(
@@ -32,16 +34,17 @@ class HomeScreen extends StatelessWidget {
                 elevation: 0,
                 backgroundColor: latarbelakang,
                 automaticallyImplyLeading: false,
-                shape: Border(bottom: BorderSide(color: latarbelakang )),
-                bottom: PreferredSize(preferredSize: const Size.fromHeight(0),
-                child: _tab(),),
+                shape: Border(bottom: BorderSide(color: latarbelakang)),
+                bottom: PreferredSize(
+                  preferredSize: const Size.fromHeight(0),
+                  child: _tab(),
+                ),
               )
             ],
             body: const TabBarView(
-              children: [SurahTab(), VersesTab(), JuzTab(),HijbTab()
-              ]
-              ),
-              ),
+              children: [SurahTab(), VersesTab(), JuzTab(), HijbTab()],
+            ),
+          ),
         ),
       ),
     );
@@ -49,97 +52,98 @@ class HomeScreen extends StatelessWidget {
 
   TabBar _tab() {
     return TabBar(
-      unselectedLabelColor: text, labelColor: Colors.white, indicatorColor: stroke, indicatorWeight: 3,
+      unselectedLabelColor: text,
+      labelColor: Colors.white,
+      indicatorColor: stroke,
+      indicatorWeight: 3,
       tabs: [
-                _tabItem(label: "Surah"),
-                _tabItem(label: "Verses"),
-                _tabItem(label: "Juz"),
-                _tabItem(label: "Hijb"),
-              ],);
+        _tabItem(label: "Surah"),
+        _tabItem(label: "Verses"),
+        _tabItem(label: "Juz"),
+        _tabItem(label: "Hijb"),
+      ],
+    );
   }
 
-  Tab _tabItem({required String label}) => Tab(child: Text(label, style: GoogleFonts.poppins(fontSize: 12, fontWeight: FontWeight.w600),),);
+  Tab _tabItem({required String label}) =>
+      Tab(child: Text(label, style: GoogleFonts.poppins(fontSize: 12, fontWeight: FontWeight.w600)));
 
   Column _greeting() {
     return Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('Assalamualaikum',
-            style: GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.w500, color: text),
-            ),
-            const SizedBox(
-              height: 4,
-            ),
-            Text('Project Kelompok 14',
-            style: GoogleFonts.poppins(fontSize: 15, fontWeight: FontWeight.w600, color: grey),
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Assalamualaikum',
+          style: GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.w500, color: text),
         ),
         const SizedBox(
-              height: 24,
-            ),
-            _lastRead()
-        ],
-        );
+          height: 4,
+        ),
+        Text(
+          'Project Kelompok 14',
+          style: GoogleFonts.poppins(fontSize: 15, fontWeight: FontWeight.w600, color: grey),
+        ),
+        const SizedBox(
+          height: 24,
+        ),
+        _lastRead()
+      ],
+    );
   }
 
   Stack _lastRead() {
-    return Stack(children: [
-            Container(
-
-              height: 131, 
-              decoration: BoxDecoration(
+    return Stack(
+      children: [
+        Container(
+          height: 131,
+          decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
-              gradient: const LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
+              gradient: const LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: [
                 Color(0xFF1C6758),
                 Color(0xFF4C726C),
-              ])
-            ),
-            ),
-            Positioned(
-              bottom: 0,
-              right: 0,
-              child: SvgPicture.asset('assets/svgs/mid_quran.svg')),
-              Padding(
-                padding: const EdgeInsets.all(20),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                  Row(
-                    children: [
-                      SvgPicture.asset('assets/svgs/buku_kecil.svg'),
-                      const SizedBox(
-                        width: 8,
-                      ),
-                      Text('mabar',
-                      style: GoogleFonts.poppins(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500),
-                      ),
-                    ],
-                  )
-                ,
-                const SizedBox(
-                        height: 20,
-                      ),
-                      Text('Al-Fatihah',
-                      style: GoogleFonts.poppins(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w600,
-                        fontSize: 18),
-                      ),
-                      const SizedBox(
-                        height: 4,
-                      ),
-                      Text('Surah Ke: 1',
-                      style: GoogleFonts.poppins(
-                        color: Colors.white,
-                        )
-                      ),
-                ],),
-              )
-          ],);
+              ])),
+        ),
+        Positioned(
+          bottom: 0,
+          right: 0,
+          child: SvgPicture.asset('assets/svgs/mid_quran.svg'),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  SvgPicture.asset('assets/svgs/buku_kecil.svg'),
+                  const SizedBox(
+                    width: 8,
+                  ),
+                  Text(
+                    'mabar',
+                    style: GoogleFonts.poppins(color: Colors.white, fontWeight: FontWeight.w500),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Text(
+                'Al-Fatihah',
+                style: GoogleFonts.poppins(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 18),
+              ),
+              const SizedBox(
+                height: 4,
+              ),
+              Text(
+                'Surah Ke: 1',
+                style: GoogleFonts.poppins(color: Colors.white),
+              ),
+            ],
+          ),
+        )
+      ],
+    );
   }
 
   AppBar _buildAppBar() {
@@ -155,11 +159,7 @@ class HomeScreen extends StatelessWidget {
           ),
           Text(
             "Dakwah'y up",
-            style: GoogleFonts.poppins(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-            ),
+            style: GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
           ),
           const Spacer(),
           IconButton(
@@ -171,27 +171,37 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  BottomNavigationBar _buildBottomNavigationBar() {
-return BottomNavigationBar(
-    type: BottomNavigationBarType.fixed,
-    backgroundColor: footer,
-    showSelectedLabels: false,
-    showUnselectedLabels: false,
-    items: [
-      _footerBarItem(icon: "assets/svgs/footer_quran.svg", label: "quran"),
-      _footerBarItem(icon: "assets/svgs/footer_lampu.svg", label: "Lampu"),
-      _footerBarItem(icon: "assets/svgs/footer_orang_duduk.svg", label: "Icon Orang Duduk"),
-      _footerBarItem(icon: "assets/svgs/footer_tangan_berdoa.svg", label: "Icon Tangan Berdoa"),
-      _footerBarItem(icon: "assets/svgs/footer_simpan.svg", label: "Icon Simpan"),
-    ],
-  );
-}
+  BottomNavigationBar _buildBottomNavigationBar(BuildContext context) {
+    return BottomNavigationBar(
+      type: BottomNavigationBarType.fixed,
+      backgroundColor: footer,
+      showSelectedLabels: false,
+      showUnselectedLabels: false,
+      items: [
+        _footerBarItem(icon: "assets/svgs/footer_quran.svg", label: "quran"),
+        _footerBarItem(icon: "assets/svgs/footer_lampu.svg", label: "Lampu"),
+        _footerBarItem(icon: "assets/svgs/footer_orang_duduk.svg", label: "Icon Orang Duduk"),
+        _footerBarItem(icon: "assets/svgs/footer_tangan_berdoa.svg", label: "Icon Tangan Berdoa"),
+        _footerBarItem(icon: "assets/svgs/footer_simpan.svg", label: "Icon Simpan"),
+      ],
+      onTap: (index) {
+        if (index == 1) {
+          Navigator.push(context, MaterialPageRoute(builder: (context) => ChatAi()));
+        } else if (index == 2) {
+          Navigator.push(context, MaterialPageRoute(builder: (context) => BacaanSholat()));
+        } else if (index == 3) {
+          Navigator.push(context, MaterialPageRoute(builder: (context) => DoaSehari()));
+        } else if (index == 4) {
+          Navigator.push(context, MaterialPageRoute(builder: (context) => Simpan()));
+        }
+      },
+    );
+  }
 
-BottomNavigationBarItem _footerBarItem({required String icon, required String label}) {
-  return BottomNavigationBarItem(
-    icon: SvgPicture.asset(icon),
-    label: label,
-  );
-}
-
+  BottomNavigationBarItem _footerBarItem({required String icon, required String label}) {
+    return BottomNavigationBarItem(
+      icon: SvgPicture.asset(icon),
+      label: label,
+    );
+  }
 }
