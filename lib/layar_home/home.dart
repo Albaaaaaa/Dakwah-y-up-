@@ -6,7 +6,7 @@ import 'package:dakwah_y_up/bilah/verses_tab.dart';
 import 'package:dakwah_y_up/layar_bacaan_sholat/bacaan_sholat.dart';
 import 'package:dakwah_y_up/layar_chat_ai/chat_ai.dart';
 import 'package:dakwah_y_up/layar_doa_sehari/doa.dart';
-import 'package:dakwah_y_up/layar_simpan/simpan.dart';
+import 'package:dakwah_y_up/asmaul_husna/asmaul_husna.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -192,7 +192,7 @@ class HomeScreen extends StatelessWidget {
         } else if (index == 3) {
           Navigator.push(context, MaterialPageRoute(builder: (context) => DoaSehari()));
         } else if (index == 4) {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => Simpan()));
+          Navigator.push(context, MaterialPageRoute(builder: (context) => AsmaulHusna()));
         }
       },
     );
