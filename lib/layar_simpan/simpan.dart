@@ -5,10 +5,10 @@ class Simpan extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('SIMPAN'),
+        title: Text('ChatAi'),
       ),
       body: Center(
-        child: Text('Ini adalah halaman Simpan'),
+        child: Text('Ini adalah halaman ChatAi'),
       ),
     );
   }
