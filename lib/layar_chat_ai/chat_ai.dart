@@ -80,4 +80,8 @@ class _ChatBotState extends State<ChatAi> {
       ),
     );
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 873ef2d938c475de5c157534f3fba275be120bdd

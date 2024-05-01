@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import 'package:flutter/material.dart';
 
 class Simpan extends StatelessWidget {
@@ -13,3 +14,5 @@ class Simpan extends StatelessWidget {
     );
   }
 }
+=======
+>>>>>>> 873ef2d938c475de5c157534f3fba275be120bdd
