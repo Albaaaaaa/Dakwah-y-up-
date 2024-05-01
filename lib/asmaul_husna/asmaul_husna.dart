@@ -36,7 +36,7 @@ class _AsmaulHusna extends State<AsmaulHusna> {
       ),
       body: Container(
         margin: const EdgeInsets.all(12),
-        color: const Color(0xFF040C23), // Ubah warna latar belakang
+        color: const Color(0xFF040C23),
         child: Column(
           children: [
             TextField(
