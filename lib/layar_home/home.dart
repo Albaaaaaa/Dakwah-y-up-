@@ -188,9 +188,9 @@ class HomeScreen extends StatelessWidget {
         if (index == 1) {
           Navigator.push(context, MaterialPageRoute(builder: (context) => ChatAi()));
         } else if (index == 2) {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => BacaanSholat()));
+          Navigator.push(context, MaterialPageRoute(builder: (context) => MainPage()));
         } else if (index == 3) {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => DoaSehari()));
+          Navigator.push(context, MaterialPageRoute(builder: (context) => DoaSehariPage()));
         } else if (index == 4) {
           Navigator.push(context, MaterialPageRoute(builder: (context) => AsmaulHusna()));
         }
