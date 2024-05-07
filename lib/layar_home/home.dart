@@ -190,11 +190,7 @@ class HomeScreen extends StatelessWidget {
         } else if (index == 2) {
           Navigator.push(context, MaterialPageRoute(builder: (context) => MainPage()));
         } else if (index == 3) {
-<<<<<<< HEAD
           Navigator.push(context, MaterialPageRoute(builder: (context) => DoaSehariPage()));
-=======
-          Navigator.push(context, MaterialPageRoute(builder: (context) => DoaSehariPage));
->>>>>>> f76abfe4f5b6c405baae3e650c4a59f34b41dc70
         } else if (index == 4) {
           Navigator.push(context, MaterialPageRoute(builder: (context) => AsmaulHusna()));
         }
