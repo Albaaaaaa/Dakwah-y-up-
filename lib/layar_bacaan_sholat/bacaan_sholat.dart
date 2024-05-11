@@ -1,6 +1,8 @@
+import 'package:dakwah_y_up/bahan.dart';
 import 'package:dakwah_y_up/layar_bacaan_sholat/detail_bacaan.dart';
 import 'package:dakwah_y_up/layar_bacaan_sholat/detail_niat,.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -13,7 +15,12 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueAccent,
+      appBar: AppBar(
+        title: Text("Niat & Bacaan Shalat",
+        style: GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.bold, color: stroke),),
+      ),
+      backgroundColor: latarbelakang,
+      
       body: SafeArea(
         child: Center(
           child: Row(
@@ -35,14 +42,13 @@ class _MainPageState extends State<MainPage> {
                       children: [
                         Image(
                           image: AssetImage("assets/images/ic_niat.png"),
-                          height: 150, // modified
-                          width: 150, // modified
+                          height: 250, // modified
+                          width: 250, // modified
                         ),
                         SizedBox(height: 10),
                         Text(
                           "Niat Sholat",
-                          style: TextStyle(
-                              fontSize: 14, fontWeight: FontWeight.bold),
+                          style: GoogleFonts.poppins(fontSize: 25, fontWeight: FontWeight.bold, color: stroke),
                         ),
                       ],
                     ),
@@ -65,14 +71,13 @@ class _MainPageState extends State<MainPage> {
                       children: [
                         Image(
                           image: AssetImage("assets/images/ic_doa.png"),
-                          height: 150, // modified
-                          width: 150, // modified
+                          height: 250, // modified
+                          width: 250, // modified
                         ),
                         SizedBox(height: 10),
                         Text(
                           "Bacaan Sholat",
-                          style: TextStyle(
-                              fontSize: 14, fontWeight: FontWeight.bold),
+                          style: GoogleFonts.poppins(fontSize: 25, fontWeight: FontWeight.bold, color: stroke),
                         ),
                       ],
                     ),

@@ -78,24 +78,6 @@ class DetailScreen extends StatelessWidget {
                     )),
                   ),
                   const Spacer(),
-                  const Icon(
-                    Icons.share_outlined,
-                    color: Colors.white,
-                  ),
-                  const SizedBox(
-                    width: 16,
-                  ),
-                  const Icon(
-                    Icons.play_arrow_outlined,
-                    color: Colors.white,
-                  ),
-                  const SizedBox(
-                    width: 16,
-                  ),
-                  const Icon(
-                    Icons.bookmark_outline,
-                    color: Colors.white,
-                  ),
                 ],
               ),
             ),

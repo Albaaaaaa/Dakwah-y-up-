@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:dakwah_y_up/bahan.dart';
 import 'package:dakwah_y_up/layar_bacaan_sholat/models/bacaan.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' as rootBundle;
@@ -21,7 +22,7 @@ class _BacaanSholatState extends State<BacaanSholat> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff0e1446),
+      backgroundColor: latarbelakang,
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -41,7 +42,7 @@ class _BacaanSholatState extends State<BacaanSholat> {
                     margin: EdgeInsets.only(top: 80),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
-                        color: Color(0xff44aca0)),
+                        color: grey),
                     height: 200,
                     width: MediaQuery.of(context).size.width,
                     child: Container(
@@ -60,7 +61,7 @@ class _BacaanSholatState extends State<BacaanSholat> {
                             Text(
                               "Bacaan sholat dari doa Iftitah sampai Salam",
                               style: TextStyle(
-                                  color: Colors.white,
+                                  color: latarbelakang,
                                   fontSize: 12,
                                   fontWeight: FontWeight.bold),
                             ),

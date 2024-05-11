@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:dakwah_y_up/bahan.dart';
 import 'package:dakwah_y_up/layar_bacaan_sholat/models/niat.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' as rootBundle;
@@ -21,7 +22,7 @@ class _NiatSholatState extends State<NiatSholat> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: latarbelakang,
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

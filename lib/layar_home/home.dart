@@ -1,8 +1,6 @@
+import 'package:dakwah_y_up/about/about_project.dart';
 import 'package:dakwah_y_up/bahan.dart';
-import 'package:dakwah_y_up/bilah/hijb_tab.dart';
-import 'package:dakwah_y_up/bilah/juz_tab.dart';
 import 'package:dakwah_y_up/bilah/surah_tab.dart';
-import 'package:dakwah_y_up/bilah/verses_tab.dart';
 import 'package:dakwah_y_up/layar_bacaan_sholat/bacaan_sholat.dart';
 import 'package:dakwah_y_up/layar_chat_ai/chat_ai.dart';
 import 'package:dakwah_y_up/layar_doa_sehari/doa.dart';
@@ -42,7 +40,7 @@ class HomeScreen extends StatelessWidget {
               )
             ],
             body: const TabBarView(
-              children: [SurahTab(), VersesTab(), JuzTab(), HijbTab()],
+              children: [SurahTab(), About()],
             ),
           ),
         ),
@@ -58,9 +56,7 @@ class HomeScreen extends StatelessWidget {
       indicatorWeight: 3,
       tabs: [
         _tabItem(label: "Surah"),
-        _tabItem(label: "Verses"),
-        _tabItem(label: "Juz"),
-        _tabItem(label: "Hijb"),
+        _tabItem(label: "About Project")
       ],
     );
   }
@@ -80,7 +76,7 @@ class HomeScreen extends StatelessWidget {
           height: 4,
         ),
         Text(
-          'Project Kelompok 14',
+          'mantap',
           style: GoogleFonts.poppins(fontSize: 15, fontWeight: FontWeight.w600, color: grey),
         ),
         const SizedBox(
@@ -120,7 +116,7 @@ class HomeScreen extends StatelessWidget {
                     width: 8,
                   ),
                   Text(
-                    'mabar',
+                    'Al-Quran',
                     style: GoogleFonts.poppins(color: Colors.white, fontWeight: FontWeight.w500),
                   ),
                 ],
@@ -129,14 +125,14 @@ class HomeScreen extends StatelessWidget {
                 height: 20,
               ),
               Text(
-                'Al-Fatihah',
-                style: GoogleFonts.poppins(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 18),
+                "Find solace in the Quran",
+                style: GoogleFonts.poppins(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 12),
               ),
               const SizedBox(
                 height: 4,
               ),
               Text(
-                'Surah Ke: 1',
+                "amidst life's chaos",
                 style: GoogleFonts.poppins(color: Colors.white),
               ),
             ],
