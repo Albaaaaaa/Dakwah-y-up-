@@ -76,7 +76,7 @@ class HomeScreen extends StatelessWidget {
           height: 4,
         ),
         Text(
-          'mantap',
+          'Muslim',
           style: GoogleFonts.poppins(fontSize: 15, fontWeight: FontWeight.w600, color: grey),
         ),
         const SizedBox(

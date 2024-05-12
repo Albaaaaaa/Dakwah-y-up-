@@ -9,64 +9,66 @@ class About extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: latarbelakang,
-      body: Container(
-        padding: EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Center(
-              child: Text(
-                'Universitas Muhammadiyah Kalimantan Timur',
-                style: GoogleFonts.poppins(
-                    fontSize: 18.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
-            ),
-            SizedBox(height: 10.0),
-            // Informasi untuk Mahasiswa 1
-            buildMahasiswaInfo(
-              'Mahasiswa 1',
-              'assets/images/mahasiswa1.png', // Ubah path foto sesuai dengan nama yang Anda berikan
-              'Nama : Nauful',
-              '[Deskripsi Foto dan Deskripsi Mahasiswa 1]',
-            ),
-            SizedBox(height: 10.0),
-            // Informasi untuk Mahasiswa 2
-            buildMahasiswaInfo(
-              'Mahasiswa 2',
-              'assets/images/mahasiswa2.png', // Ubah path foto sesuai dengan nama yang Anda berikan
-              'Nama : Edwin',
-              '[Deskripsi Foto dan Deskripsi Mahasiswa 2]',
-            ),
-            SizedBox(height: 10.0),
-            // Informasi untuk Mahasiswa 3
-            buildMahasiswaInfo(
-              'Mahasiswa 3',
-              'assets/images/mahasiswa3.png', // Ubah path foto sesuai dengan nama yang Anda berikan
-              'Nama : Irsyad',
-              '[Deskripsi Foto dan Deskripsi Mahasiswa 3]',
-            ),
-            SizedBox(height: 10.0),
-            // Informasi untuk Mahasiswa 4
-            buildMahasiswaInfo(
-              'Mahasiswa 4',
-              'assets/images/mahasiswa4.png', // Ubah path foto sesuai dengan nama yang Anda berikan
-              'Nama : Muhammad Ulil Albab',
-              'NIM  : 2211102441104',
-            ),
-            SizedBox(height: 10.0),
-            Center(
-              child: Text(
-                'Kelompok 14',
-                style: TextStyle(
-                  fontSize: 16.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.blue,
+      body: SingleChildScrollView(
+        child: Container(
+          padding: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 208.0), // Adjust bottom padding as needed
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Center(
+                child: Text(
+                  'Universitas Muhammadiyah Kalimantan Timur',
+                  style: GoogleFonts.poppins(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
                 ),
               ),
-            ),
-          ],
+              SizedBox(height: 10.0),
+              // Informasi untuk Mahasiswa 1
+              buildMahasiswaInfo(
+                'Mahasiswa 1',
+                'assets/images/mahasiswa1.png', // Ubah path foto sesuai dengan nama yang Anda berikan
+                'Nama : Naufal Rajwa Dwiyana Athallah',
+                'NIM  : 2211102441136',
+              ),
+              SizedBox(height: 10.0),
+              // Informasi untuk Mahasiswa 2
+              buildMahasiswaInfo(
+                'Mahasiswa 2',
+                'assets/images/mahasiswa2.png', // Ubah path foto sesuai dengan nama yang Anda berikan
+                'Nama : Edwin Abdul Salam',
+                'NIM  : 2211102441138',
+              ),
+              SizedBox(height: 10.0),
+              // Informasi untuk Mahasiswa 3
+              buildMahasiswaInfo(
+                'Mahasiswa 3',
+                'assets/images/mahasiswa3.png', // Ubah path foto sesuai dengan nama yang Anda berikan
+                'Nama : Muhammad Irsyadudin Islami',
+                'NIM  : 2211102441128',
+              ),
+              SizedBox(height: 10.0),
+              // Informasi untuk Mahasiswa 4
+              buildMahasiswaInfo(
+                'Mahasiswa 4',
+                'assets/images/mahasiswa4.png', // Ubah path foto sesuai dengan nama yang Anda berikan
+                'Nama : Muhammad Ulil Albab',
+                'NIM  : 2211102441104',
+              ),
+              SizedBox(height: 10.0),
+              Center(
+                child: Text(
+                  'Kelompok 14',
+                  style: TextStyle(
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blue,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
