@@ -21,7 +21,7 @@ Asmaul Husna
 -Menyediakan daftar 99 nama Allah (Asmaul Husna) beserta arti dan penjelasannya. Fitur ini membantu pengguna untuk memahami sifat-sifat Allah dan memperdalam kecintaan serta pengabdian mereka kepada-Nya.
 
 Tim Pengembang
-Edwin Abdul Salam
-Muhammad Irsyadudin
-Naufal Rajwa Dwiyana
-Muhammad Ulil Albab
+-Edwin Abdul Salam
+-Muhammad Irsyadudin
+-Naufal Rajwa Dwiyana
+-Muhammad Ulil Albab
