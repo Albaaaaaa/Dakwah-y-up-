@@ -18,7 +18,7 @@ Dakwah'y Up is a Flutter-based mobile application designed to assist Muslims in 
 
 # Project Team
 
-| Nama Mahasiswa                     | NIM               | Instagram                                           |
+| Name                               | NIM               | Instagram                                           |
 |------------------------------------|-------------------|-----------------------------------------------------|
 | Muhammad Ulil Albab                | 2211102441104     | <a href="https://www.instagram.com/lil.albaa" target="_blank"><img src="https://img.icons8.com/color/30/000000/instagram-new.png"/></a>            |
 | Naufal Rajwa Dwiyana Athallah      | 2211102441136     | <a href="https://www.instagram.com/onlynau_u" target="_blank"><img src="https://img.icons8.com/color/30/000000/instagram-new.png"/></a>           |
