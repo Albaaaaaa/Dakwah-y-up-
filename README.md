@@ -7,14 +7,14 @@
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 
-# Tim Pengembang
+# Project Team
 
 | Nama Mahasiswa                     | NIM               | Instagram                                           |
 |------------------------------------|-------------------|-----------------------------------------------------|
-| Muhammad Ulil Albab                | 2211102441104     | [![Instagram](https://img.icons8.com/color/30/000000/instagram-new.png)](https://www.instagram.com/lil.albaa)            |
-| Naufal Rajwa Dwiyana Athallah      | 2211102441136     | [![Instagram](https://img.icons8.com/color/30/000000/instagram-new.png)](https://www.instagram.com/onlynau_u)           |
-| Muhammad Irsyadudin Islami         | 2211102441128     | [![Instagram](https://img.icons8.com/color/30/000000/instagram-new.png)](https://www.instagram.com/arv.vaa)      |
-| Edwin Abdul Salam                  | 2211102441138     | [![Instagram](https://img.icons8.com/color/30/000000/instagram-new.png)](https://www.instagram.com/edwinabdulsalam)           |
+| Muhammad Ulil Albab                | 2211102441104     | <a href="https://www.instagram.com/lil.albaa" target="_blank"><img src="https://img.icons8.com/color/30/000000/instagram-new.png"/></a>            |
+| Naufal Rajwa Dwiyana Athallah      | 2211102441136     | <a href="https://www.instagram.com/onlynau_u" target="_blank"><img src="https://img.icons8.com/color/30/000000/instagram-new.png"/></a>           |
+| Muhammad Irsyadudin Islami         | 2211102441128     | <a href="https://www.instagram.com/arv.vaa" target="_blank"><img src="https://img.icons8.com/color/30/000000/instagram-new.png"/></a>      |
+| Edwin Abdul Salam                  | 2211102441138     | <a href="https://www.instagram.com/edwinabdulsalam" target="_blank"><img src="https://img.icons8.com/color/30/000000/instagram-new.png"/></a>           |
 
 
 
