@@ -11,11 +11,19 @@ Dakwah'y Up is a Flutter-based mobile application designed to assist Muslims in 
 - 📖 **Prayer Readings**: This feature includes texts and guidelines for prayer readings, from Takbiratul Ihram to Salam. Each reading is equipped with Arabic text, transliteration, and Indonesian translation to assist users who are not yet fluent in reading Arabic script.
 - 📿 **Daily Prayers**: A collection of daily prayers often recited by Muslims, such as waking up prayers, leaving home prayers, prayers before eating, and more. Each prayer is accompanied by Arabic text, transliteration, and Indonesian translation.
 - 🌹 **Asmaul Husna**: Provides a list of the 99 names of Allah (Asmaul Husna) along with their meanings and explanations. This feature helps users understand the attributes of Allah and deepen their love and devotion to Him.
-![Mockup 2](https://github.com/Albaaaaaa/Dakwah-y-up-/blob/main/assets/images/Black%20and%20Grey%20Clothes%20Mockup%20Instagram%20Story.png)
 
 
 # 💻 Tech Stack:
 ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=flat-square&logo=dart&logoColor=white) ![CMake](https://img.shields.io/badge/CMake-%23008FBA.svg?style=flat-square&logo=cmake&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat-square&logo=html5&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=flat-square&logo=c%2B%2B&logoColor=white) ![Swift](https://img.shields.io/badge/swift-F54A2A?style=flat-square&logo=swift&logoColor=white)
+
+# Project Team
+
+| Nama Mahasiswa                     | NIM               | Instagram                                           |
+|------------------------------------|-------------------|-----------------------------------------------------|
+| Muhammad Ulil Albab                | 2211102441104     | <a href="https://www.instagram.com/lil.albaa" target="_blank"><img src="https://img.icons8.com/color/30/000000/instagram-new.png"/></a>            |
+| Naufal Rajwa Dwiyana Athallah      | 2211102441136     | <a href="https://www.instagram.com/onlynau_u" target="_blank"><img src="https://img.icons8.com/color/30/000000/instagram-new.png"/></a>           |
+| Muhammad Irsyadudin Islami         | 2211102441128     | <a href="https://www.instagram.com/arv.vaa" target="_blank"><img src="https://img.icons8.com/color/30/000000/instagram-new.png"/></a>      |
+| Edwin Abdul Salam                  | 2211102441138     | <a href="https://www.instagram.com/edwinabdulsalam" target="_blank"><img src="https://img.icons8.com/color/30/000000/instagram-new.png"/></a>           |
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 ## Getting Started
@@ -49,33 +57,10 @@ Please follow the steps below for successful installation:
    ```sh
    git clone https://github.com/Albaaaaaa/Dakwah-y-up-.git
 
-2. **Navigate to Project Directory:**
-
-Move to the project directory that has been cloned.
+2. **Move to the project directory that has been cloned. Run the following command to install the required packages.**
+Install Flutter Packages and After the packages are installed, you can run the application using an emulator or a connected physical device.:**
 
    ```sh
    cd Dakwah-y-up-
-
-3. **Run the following command to install the required packages.**
-Install Flutter Packages:
-
-   ```sh
-  flutter pub get
-
-4. Run the Application:
-
-After the packages are installed, you can run the application using an emulator or a connected physical device.
-   ```sh
-flutter run
-
-
-
-
-# Project Team
-
-| Nama Mahasiswa                     | NIM               | Instagram                                           |
-|------------------------------------|-------------------|-----------------------------------------------------|
-| Muhammad Ulil Albab                | 2211102441104     | <a href="https://www.instagram.com/lil.albaa" target="_blank"><img src="https://img.icons8.com/color/30/000000/instagram-new.png"/></a>            |
-| Naufal Rajwa Dwiyana Athallah      | 2211102441136     | <a href="https://www.instagram.com/onlynau_u" target="_blank"><img src="https://img.icons8.com/color/30/000000/instagram-new.png"/></a>           |
-| Muhammad Irsyadudin Islami         | 2211102441128     | <a href="https://www.instagram.com/arv.vaa" target="_blank"><img src="https://img.icons8.com/color/30/000000/instagram-new.png"/></a>      |
-| Edwin Abdul Salam                  | 2211102441138     | <a href="https://www.instagram.com/edwinabdulsalam" target="_blank"><img src="https://img.icons8.com/color/30/000000/instagram-new.png"/></a>           |
+   flutter pub get
+   flutter run
